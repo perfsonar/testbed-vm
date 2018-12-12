@@ -3,7 +3,8 @@
 #
 
 # This configuration uses IP blocks intended for documentation as
-# examples and should not be used in production.
+# examples and will not result in a functioning VM because they are
+# unlikely to be able to reach the Internet.
 
 network:
 
