@@ -1,6 +1,7 @@
 # Vagrant Testbed VM
 
-This directory
+This directory contains files to build a single VM for use as a testbed host.
+
 
 ## Prerequisites and Setup
 
