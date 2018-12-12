@@ -1,0 +1,32 @@
+#
+# Generic Testbed Configuration
+#
+
+# This configuration uses IP blocks intended for documentation as
+# examples and should not be used in production.
+
+network:
+
+  # eth0 is the NAT interface.  Don't configure that.
+
+  # Note that the global default route will be on the first of these
+  # interfaces if it has a default route configured.  Othewise, any
+  # VMs created based on this testbed will have no default route.
+
+  eth1:					# Interface on guest
+    bridge: p3p1			# Bridge to this interface on the host
+    ip:
+      4:
+        block: 192.0.2.0/24		# Network Block
+        default: 192.0.2.1		# Default gateway
+      6:
+        block: 2001:0db8:0001::/65	# Network Block
+        default: 2001:0db8:0001::1	# Default gateway
+
+  eth2:
+    bridge: p3p2
+    ip:
+      # No IPv4 on this interface.
+      6:
+        block: 2001:0db8:0002::/65
+        default: 2001:0db8:0002::1

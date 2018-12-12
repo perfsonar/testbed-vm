@@ -1,0 +1,20 @@
+#
+# perfSONAR Testbed System Configuration
+#
+
+# What testbed configuration will be used.  (See testbeds/*.yaml.)
+testbed: sample
+
+# Name for this host
+host-name: sample-host
+
+# Host number within the CIDRs listed in the testbed configuration.
+# Must be within the usable range of hosts for all of them.  Note that host 1
+# or the last one in the block is often the gateway.
+host-number: 2
+
+# Which repository to run: nightly, staging or production
+repository: production
+
+# Destroy and rebuild the machine each night
+rebuild: false

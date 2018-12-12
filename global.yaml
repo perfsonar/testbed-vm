@@ -1,0 +1,5 @@
+#
+# Configuration for all testbeds
+#
+
+perfsonar-repo: http://software.internet2.edu/rpms/el7/x86_64/main/RPMS/perfSONAR-repo-0.8-1.noarch.rpm

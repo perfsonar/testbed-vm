@@ -1,0 +1,13 @@
+#!/bin/sh
+
+REBUILD=$(awk '-F: ' '$1 == "rebuild" { print $2 }' config.yaml | tr A-Z a-z)
+
+case $REBUILD in
+    true|yes|1)
+	make rebuild > rebuild.log 2>&1
+	;;
+
+    false|no|0)
+	# Do nothing.
+	;;
+esac

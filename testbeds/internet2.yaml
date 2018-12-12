@@ -1,0 +1,23 @@
+#
+# Internet2 Testbed Configuration
+#
+
+network:
+
+  eth1:
+    bridge: p3p1
+    ip:
+      4:
+        block: 163.253.37.208/28
+        default: 163.253.37.209
+      6:
+        block: 2001:0468:2620:0030::/100
+        default: 2001:0468:2620:0030::1
+
+  eth2:
+    bridge: p3p2
+    ip:
+      # No IPv4 on this interface.
+      6:
+        block: 2001:0468:2620:0031::/100
+        default: 2001:0468:2620:0031::1
