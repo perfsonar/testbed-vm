@@ -1,3 +1,5 @@
+# THIS REPOSITORY IS OUTDATED AND WILL BE REMOVED.
+
 # Vagrant Testbed VM
 
 This directory contains files to build a single VM for use as a testbed host.
